@@ -1,7 +1,38 @@
 body {
   padding: 0;
   margin: 0;
+  position: relative;
 }
+
 html, body, #map {
   height: 100%;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  z-index: 1000;
+  text-align: center;
+  width: 100%;
+}
+
+.buttons .button {
+  width: 140px;
+  padding: 5px;
+  background-image: none;
+  background: none;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.buttons .button.active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  background-color: #e9e9e9;
 }
