@@ -5,9 +5,11 @@
   });
 
   L.tileLayer('tiles/{z}/{x}/{y}.png', {
-    minZoom: 2,
+    minZoom: 1,
     maxZoom: 6
   }).addTo(map);
+
+  map.fitBounds(L.latLngBounds(L.latLng(-84.92832, -172.61718), L.latLng(30.75127, 37.26562)));
 
   var $buttons = $('.buttons');
   $buttons.on('click', '.button', function (event) {
